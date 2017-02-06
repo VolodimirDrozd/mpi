@@ -1,6 +1,13 @@
 package com.ehealth.mpi.validator;
 
-public interface DataValidator {
+import org.springframework.stereotype.Component;
 
-	boolean isValid(String data);
+import com.ehealth.mpi.entity.Patient;
+
+@Component
+public class DataValidator {
+
+	public boolean isValid(Patient data) {
+		return true;
+	}
 }
